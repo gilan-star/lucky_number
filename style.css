@@ -1,0 +1,138 @@
+/* GLOBAL */
+:root {
+  /* COLOR */
+  --color-prussian-blue: #003566;
+  --color-oxford-blue: #001d3d;
+  --color-mikado-yellow: #ffc300;
+  --color-orange: #ffa600;
+  --color-darkcyan: #0097a7;
+
+  /* FONT SIZE */
+  --font-large: 60px;
+  --font-regular: 48px;
+  --font-medium: 24px;
+  --font-small: 16px;
+
+  /* FONT WEIGHT */
+  --weight-bold: 500;
+  --weight-regular: 400;
+  --weight-light: 300;
+}
+
+/* UNIVERSIAL TAGS */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  position: relative;
+  cursor: default;
+  background: linear-gradient(#e66465, #9198e5);
+  overflow: hidden;
+}
+
+/* TYPOGRAPHY */
+h1 {
+  font-size: var(--font-large);
+}
+
+h3 {
+  font-size: var(--font-medium);
+}
+
+/* TITLE */
+.title__main {
+  font-family: 'Shrikhand', cursive;
+  color: var(--color-mikado-yellow);
+  text-align: center;
+  margin: 50px auto 0;
+  filter: drop-shadow(3px 3px 0 #000000);
+}
+
+.title__sub {
+  font-weight: var(--weight-bold);
+  color: var(--color-oxford-blue);
+  text-align: center;
+}
+
+/* VISUAL */
+.visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.visual__float_1 {
+  position: absolute;
+  top: -25%;
+  left: 10%;
+  width: 30%;
+  z-index: -1;
+}
+
+.visual__float_2 {
+  position: absolute;
+  transform: rotate(145deg);
+  top: -40%;
+  right: 5%;
+  width: 40%;
+  z-index: -1;
+}
+
+.visual__medal {
+  width: 150px;
+  margin-top: -30px;
+  margin-bottom: -50px;
+  z-index: 0;
+}
+
+.visual__box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 800px;
+  height: 200px;
+  border-radius: 10px;
+  border: 3px solid var(--color-mikado-yellow);
+  background-color: var(--color-oxford-blue);
+}
+
+.visual__box .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 170px;
+  border-radius: 10px;
+  background-color: var(--color-prussian-blue);
+}
+
+.visual__box .box .number {
+  color: var(--color-mikado-yellow);
+  font-family: 'Shrikhand', cursive;
+  font-size: var(--font-regular);
+}
+
+.visual button {
+  margin-top: 20px;
+  margin-bottom: 200px;
+  font-family: 'Shrikhand', cursive;
+  font-size: var(--font-medium);
+  font-weight: var(--weight-regular);
+  width: 180px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-mikado-yellow);
+  filter: drop-shadow(2px 2px 1px #383838);
+}
+
+.visual button:hover {
+  color: var(--color-oxford-blue);
+  background-color: var(--color-orange);
+}
