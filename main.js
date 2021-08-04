@@ -18,7 +18,7 @@ function eventHandler() {
     order.innerHTML = result[i];
   };
 
-}
+};
 
 const button = document.querySelector('button');
 button.addEventListener('click', eventHandler);
