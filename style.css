@@ -144,3 +144,119 @@ footer p {
   font-size: var(--font-micro);
   text-align: center;
 }
+
+/* FOR BELOW 840px SCREEN WIDTH */
+@media screen and (max-width: 840px) {
+  :root {
+    /* FONT SIZE */
+    --font-large: 46px;
+    --font-regular: 28px;
+    --font-medium: 20px;
+    --font-small: 14px;
+    --font-micro: 10px;
+  }
+
+  /* TITLE */
+  .title__main {
+    font-family: 'Shrikhand', cursive;
+    color: var(--color-mikado-yellow);
+    text-align: center;
+    margin: 15% auto 0;
+    filter: drop-shadow(3px 3px 0 #000000);
+  }
+
+  .title__sub {
+    font-weight: var(--weight-bold);
+    color: var(--color-oxford-blue);
+    text-align: center;
+  }
+
+  /* VISUAL */
+  .visual {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30%;
+  }
+
+  .visual__float_1 {
+    position: absolute;
+    top: -20%;
+    left: -0%;
+    width: 40%;
+    z-index: -1;
+  }
+
+  .visual__float_2 {
+    position: absolute;
+    transform: none;
+    top: -35%;
+    right: -0%;
+    width: 60%;
+    z-index: -1;
+  }
+
+  .visual__medal {
+    width: 90px;
+    margin-top: -30px;
+    margin-bottom: -50px;
+    z-index: 0;
+  }
+
+  .visual__box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 97%;
+    height: 150px;
+    border-radius: 10px;
+    border: 3px solid var(--color-mikado-yellow);
+    background-color: var(--color-oxford-blue);
+  }
+
+  .visual__box .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14%;
+    height: 130px;
+    border-radius: 5px;
+    background-color: var(--color-prussian-blue);
+  }
+
+  .visual__box .box .number {
+    color: var(--color-mikado-yellow);
+    font-family: 'Shrikhand', cursive;
+    font-size: var(--font-regular);
+  }
+
+  .visual button {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-family: 'Shrikhand', cursive;
+    font-size: var(--font-medium);
+    font-weight: var(--weight-regular);
+    width: 180px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-mikado-yellow);
+    filter: drop-shadow(2px 2px 1px #383838);
+  }
+
+  .visual button:hover {
+    color: var(--color-oxford-blue);
+    background-color: var(--color-orange);
+  }
+
+  /* FOOTER */
+  footer p {
+    position: absolute;
+    font-size: var(--font-micro);
+    bottom: 12%;
+    left: 0;
+    right: 0;
+  }
+}
