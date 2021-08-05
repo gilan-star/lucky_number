@@ -18,12 +18,28 @@ function eventHandler() {
         if (randomValue == result[j]) {
           isUnique = false;
           break;
-        }
-      }
-    }
+        };
+      };
+    };
     result.push(randomValue);
     numbers[i].innerHTML = result[i];
   }
+
+  // USING DO WHILE LOOP
+  // for (i = 0; i < 6; i++){
+  //   do {
+  //     randomValue = randomNumber(45);
+  //     isUnique = true;
+  //     for (j = 0; j < result.length; j++) {
+  //       if (randomValue == result[j]) {
+  //         isUnique = false;
+  //         break;
+  //       }
+  //     }
+  //   } while (isUnique == false);
+  //   result.push(randomValue);
+  //   numbers[i].innerHTML = result[i];
+  // }
   
 };
 
