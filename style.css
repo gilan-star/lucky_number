@@ -119,13 +119,13 @@ h3 {
   font-size: var(--font-regular);
 }
 
-.visual button {
+.btn-group {
   margin-top: 20px;
   margin-bottom: 80px;
   font-family: 'Shrikhand', cursive;
   font-size: var(--font-medium);
   font-weight: var(--weight-regular);
-  width: 180px;
+  width: 200px;
   height: 50px;
   border-radius: 8px;
   border: none;
@@ -134,9 +134,13 @@ h3 {
   filter: drop-shadow(2px 2px 1px #383838);
 }
 
-.visual button:hover {
+.btn-group:hover {
   color: var(--color-oxford-blue);
   background-color: var(--color-orange);
+}
+
+.btn-group .btn {
+  font-size: var(--font-medium);
 }
 
 /* FOOTER */
@@ -231,11 +235,10 @@ footer p {
     font-size: var(--font-regular);
   }
 
-  .visual button {
+  .btn-group {
     margin-top: 20px;
     margin-bottom: 80px;
     font-family: 'Shrikhand', cursive;
-    font-size: var(--font-medium);
     font-weight: var(--weight-regular);
     width: 180px;
     height: 50px;
@@ -246,9 +249,8 @@ footer p {
     filter: drop-shadow(2px 2px 1px #383838);
   }
 
-  .visual button:hover {
-    color: var(--color-oxford-blue);
-    background-color: var(--color-orange);
+  .btn-group .btn {
+    font-size: var(--font-medium);
   }
 
   /* FOOTER */

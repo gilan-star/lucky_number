@@ -22,8 +22,32 @@ function eventHandler() {
       };
     };
     result.push(randomValue);
-    numbers[i].innerHTML = result[i];
+    numbers[i].innerHTML = result[i];    
   }
+
+  // MAKE RESULT IN ORDER
+  const btnGroup = document.querySelector('.btn-group');
+  const ascendingBtn = btnGroup.querySelector('.ascending');
+  const descendingBtn = btnGroup.querySelector('.descending');
+
+  ascendingBtn.addEventListener('click', function () {
+    result.sort(function (a, b) {
+      return a - b;
+    });
+    for (let j = 0; j < 6; j++){
+      numbers[j].textContent = result[j];
+    }
+  })
+
+  descendingBtn.addEventListener('click', function () {
+    result.sort(function (a, b) {
+      return b - a;
+    });
+    for (let j = 0; j < 6; j++){
+      numbers[j].textContent = result[j];
+    }
+  })
+
 
   // USING DO WHILE LOOP
   // for (i = 0; i < 6; i++){
